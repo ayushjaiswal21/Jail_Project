@@ -1,6 +1,7 @@
 import requests
 import time
 import logging
+import base64
 import json # Ensure json is available for debug
 from config import SEARCH_ENDPOINT, HEADERS, DETAILS_ENDPOINT
 
@@ -91,7 +92,8 @@ def normalize_data(details):
         "city": details.get("city"),
         "state": details.get("state"),
         "sheriff_link": f"https://jailroster.hennepin.us",
-        "booking_photo": f"https://jailroster.hennepin.us/JailRosterOnline/JailRoster/BookingPhoto?bookingNumber={details.get('bookingNumber')}" if details.get("bookingNumber") else None
+        "booking_photo": f"https://jailroster.hennepin.us/JailRosterOnline/JailRoster/BookingPhoto?bookingNumber={details.get('bookingNumber')}" if details.get("bookingNumber") else None,
+        "data_fingerprint": base64.b64encode(f"property_of_AyushJaiswal21_{details.get('bookingNumber')}".encode()).decode()
     }
 
     flat_rows = []
