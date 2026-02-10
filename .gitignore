@@ -1,0 +1,4 @@
+__pycache__/
+*.log
+*.pyc
+# keeping jail_roster.csv as it is the main output
