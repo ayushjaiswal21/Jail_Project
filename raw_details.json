@@ -1,0 +1,34 @@
+{
+    "inmateNumber": "202204827",
+    "housingLocationFacility": "City Hall",
+    "city": "ST PAUL",
+    "state": "MN",
+    "cases": [
+        {
+            "chargedBy": "MINNEAPOLIS PD",
+            "caseType": "PROBABLE CAUSE",
+            "holdWithoutBail": true,
+            "bailOptions": [],
+            "caseNumber": null,
+            "clearReason": null,
+            "nextCourtDate": null,
+            "charges": [
+                {
+                    "description": "DWI",
+                    "severityOfCharge": "Probable Cause",
+                    "statute": "169A.20",
+                    "chargeStatus": null
+                }
+            ]
+        }
+    ],
+    "incarcerationId": 1660873,
+    "bookingNumber": "2026002618",
+    "fullName": "AARESTAD, TREY MICHAEL",
+    "age": 31,
+    "custodyStatus": 1,
+    "custodyStatusDisplay": "Currently in Jail/Custody",
+    "arrestedBy": "MINNEAPOLIS PD",
+    "receivedDateTime": "2026-02-10T04:45:48.233",
+    "releasedDateTime": null
+}
